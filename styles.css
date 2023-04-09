@@ -1,0 +1,200 @@
+@font-face {
+    font-family: odinfont;
+    src: url(https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf);
+  }
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+
+}
+
+.image {
+    background-image: url(images/halie-west-bTzpau9mKT4-unsplash.jpg);
+    background-size: auto 100%;
+    background-clip: padding-box;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    width: min(65vh, 30%);
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    z-index: 10000;
+}
+
+.logo {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 3vh;
+    margin-top: 20vh;
+    height: 10%;
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+.logo p {
+    font-family: odinfont;
+    margin: 0;
+
+    font-size: min(12vh, 10vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.image>p {
+    color: white;
+
+    font-size: min(10px,1vw);
+    font-weight: 400;
+
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
+.image>p>a {color: white;}
+
+
+.content {
+    flex: 1;
+    background-color: white;
+
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+
+
+.header {
+    flex: 1 1 100px;
+
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    gap: 20px;
+    padding: 40px 30px;
+
+    background-color: whitesmoke;
+}
+
+.header>p {
+    padding: 0;
+    margin: 0;
+    width: 35em;
+
+    font-size: 17px;
+    font-weight: bold;
+}
+
+
+
+
+.hero {
+    padding: 20px 35px;
+
+    flex:none;
+    height: max(30vh,200px);
+
+    box-shadow: 0px 5px 10px 0.0000001px gray;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    z-index: 500;
+}
+
+.hero > h3 {
+    margin: 0;
+}
+
+input {
+    border: 1px solid gray;
+    border-radius: 4px;
+    width: 200px;
+    height: 20px;
+
+    padding: 0;
+}
+input:focus {
+    outline: none;
+    box-shadow: 0px 0px 3px 1px darkolivegreen; 
+    border: 1.5px solid darkolivegreen;
+}
+
+.form {
+    list-style-type: none;
+
+    padding: 0;
+    margin: 0;
+    width: min(80%,500px);
+    
+    flex: 1;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.form li {
+    display: flex;
+    flex-direction: column;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #555555;
+    font-size: 8px;
+    letter-spacing: 1px;
+
+    padding-right: 35px;
+
+    gap: 2px;
+}
+
+
+
+
+.footer {
+    flex: 1 1 100px;
+
+    background-color: whitesmoke;
+
+    padding: 30px 40px;
+
+    font-weight: bold;
+    color: #555555;
+}
+
+.footer>button {
+    background-color: darkolivegreen;
+    box-shadow: 1px 1px 3px 0px black;
+
+    width: 200px;
+    height: 50px;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.footer  a {
+    text-decoration: none;
+    color: darkolivegreen;
+}
